@@ -1,0 +1,68 @@
+/* Container */
+.about {
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Main heading */
+.about h1 {
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+/* Each card */
+.about-image-logo {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+/* Images inside cards */
+.about-image-logo img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Subheading */
+.about-image-logo h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Description text */
+.about-image-logo p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0 10px;
+  color: #444;
+}
+
+/* ------------------------------------- */
+/*            MOBILE VIEW CSS            */
+/* ------------------------------------- */
+
+@media (max-width: 768px) {
+  .about h1 {
+    font-size: 28px;
+  }
+
+  .about-image-logo img {
+    width: 90px;       /* smaller image */
+  }
+
+  .about-image-logo h2 {
+    font-size: 22px;
+  }
+
+  .about-image-logo p {
+    font-size: 16px;
+    padding: 0 5px;
+  }
+
+  .about {
+    padding: 30px 15px;
+  }
+}

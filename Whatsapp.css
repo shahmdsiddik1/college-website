@@ -1,0 +1,49 @@
+/* Container not needed to be absolute */
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+}
+
+/* Icon Style */
+.whatsapp-logo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.whatsapp-logo img:hover {
+  transform: scale(1.1);
+}
+
+/* ----------------------------------- */
+/*          MOBILE VIEW (Responsive)   */
+/* ----------------------------------- */
+
+@media (max-width: 768px) {
+  .whatsapp {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-logo img {
+    width: 60px;   /* Slightly smaller on mobile */
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-logo img {
+    width: 55px;
+    height: 55px;
+  }
+}
