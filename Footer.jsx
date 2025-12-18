@@ -1,15 +1,27 @@
-import React from 'react'
-import './Footer.css'
-const Footer = () => {
-  return (
-    <div className='footer'>
-      <p> © 2027 GODAVARI GROUP OF INSTITUTE. All rights reserved.</p>
-      <ul>
-        <li>Terms Of Services</li>
-        <li>Privacy Policy</li>
-      </ul>
-    </div>
-  )
-}
+import React from "react";
+import "./Footer.css";
 
-export default Footer
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="footer">
+      <p>© {currentYear} GODAVARI GROUP OF INSTITUTE. All rights reserved.</p>
+
+      <ul>
+        <li>
+          <a href="#" aria-label="Terms of Service">
+            Terms of Service
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Privacy Policy">
+            Privacy Policy
+          </a>
+        </li>
+      </ul>
+    </footer>
+  );
+};
+
+export default Footer;
