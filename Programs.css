@@ -1,58 +1,80 @@
-.programs{
-    margin: 80px auto;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* ===========================
+   Programs Section
+=========================== */
+
+.programs {
+  width: 90%;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
-.programs img{
-    width: 100%;
-    border-radius: 30px;
-    display: block;
+
+/* Individual Program Card */
+.program {
+  flex-basis: 31%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
 }
-.program{
-    flex-basis: 31%;
-    position: relative;
+
+/* Background Image */
+.program img {
+  width: 100%;
+  display: block;
+  border-radius: 30px;
 }
-.caption{
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: rgba(0, 15, 152, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+/* Hover Caption Overlay */
+.caption {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 15, 152, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  padding: 20px;
+}
+
+/* Caption Icon */
+.caption img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* Caption Text */
+.caption h3 {
+  margin-bottom: 8px;
+}
+
+.caption p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Hover Effect */
+.program:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===========================
+   Responsive (Tablet & Mobile)
+=========================== */
+
+@media (max-width: 850px) {
+  .programs {
     flex-direction: column;
-    color: white;
-    cursor: pointer;
-    opacity: 0;
-    padding-top: 60%;
-    transition: 0.4s;
-}
-.caption img{
-    width: 60px;
-    margin-bottom: 10px;
-}
-.program:hover .caption{
-    opacity: 1;
-    padding-top: 0;
-}
-.caption p{
-    text-align: center;
-}
+  }
 
-/* ------- media query-----*/
-@media (max-width:850px){
-    .programs{
-        flex-direction: column;
-
-    }
-    .program{
-        flex-basis: 100%;
-        margin: 20px;
-        
-    }
+  .program {
+    flex-basis: 100%;
+  }
 }
