@@ -29,6 +29,7 @@ nav ul li {
 
 }
 
+
 /* --------- media Query---------- */ 
 
 
@@ -63,4 +64,25 @@ nav ul li {
        display: none;
 
     }
+}
+/* ===== FIX NAVBAR BUTTON VISIBILITY ===== */
+.navbar{
+     background: rgba(33, 46, 160, 0.9);
+       box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+
+}
+/* Buttons */
+nav ul li .btn {
+  background: white;
+  color: #212ea0;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+nav ul li .btn:hover {
+  background: #f4b400;
+  color: #000;
 }
