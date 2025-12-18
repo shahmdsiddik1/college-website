@@ -27,7 +27,7 @@ const Navbar = () => {
 <nav className={`container ${sticky ? "dark-nav" : ""}`}>
   <img src={logo} alt="" className="logo" />
 
-  <ul className={mobileMenu?'':'hide-mobile-menu'}>
+<ul className={`menu ${mobileMenu ? "show-menu" : "hide-mobile-menu"}`}>
     <li>
       <Link to="hero" smooth={true} duration={500} offset={0} className="btn">
         Home
