@@ -17,8 +17,8 @@ function App() {
       <Hero/>
       <div className="containers">
         <Title subtitle='OUR PROGRAM 'title='what we offer '/>
+         <About/>
       <Programs/>
-      <About/>
       <Title subtitle='Gallery' title='campus photo'/>
       <Campus/>
        <Title subtitle='Contact us' title=' Get in Touch'/>
